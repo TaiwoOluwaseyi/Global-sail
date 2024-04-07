@@ -179,7 +179,7 @@
         <div class="cards-wrapper">
           <div class="card" data-tilt>
             <div class="card-img-wrapper">
-              <img src="./images/person-1.jpg" alt="CEO" />
+              <img src="./images/daddy for him.jpg" alt="CEO" />
             </div>
 
             <div class="card-info">
@@ -194,15 +194,14 @@
 
           <div class="card" data-tilt>
             <div class="card-img-wrapper">
-              <img src="./images/person-2.jpg" alt="Designer" />
+              <img src="./images/tosin for daddy.jpg" alt="Designer" />
             </div>
 
             <div class="card-info">
               <h2>Taiwo Oluwastosin</h2>
               <h3>Director</h3>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Praesentium, sit.
+                Over Ten Years Of Experience In Operations
               </p>
               <button>Read More</button>
             </div>
@@ -210,15 +209,14 @@
 
           <div class="card" data-tilt>
             <div class="card-img-wrapper">
-              <img src="./images/person-3.jpg" alt="Architect" />
+              <img src="./images/daddys site.jpg" alt="Architect" />
             </div>
 
             <div class="card-info">
               <h2>Taiwo Oluwaseyi Mabel</h2>
-              <h3>Manager</h3>
+              <h3>CTO</h3>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Praesentium, sit.
+                Over Five Years Of Experience In Information Technology
               </p>
               <button>Read More</button>
             </div>
@@ -233,19 +231,19 @@
           <div class="contact-left"></div>
           <div class="contact-right">
             <h1 class="contact-heading">Contact</h1>
-            <form>
+            <form id="contact-form" onsubmit="event.preventDefault">
               <div class="input-group">
-                <input type="text" class="field" />
+                <input type="text" class="field" name="form_name" required/>
                 <label class="input-label">Full Name</label>
               </div>
 
               <div class="input-group">
-                <input type="email" class="field" />
+                <input type="email" class="field" name="reply_to"  required/>
                 <label class="input-label" email>Email</label>
               </div>
 
               <div class="input-group">
-                <textarea class="field"></textarea>
+                <textarea class="field" name="message" required></textarea>
                 <label class="message">Message</label>
               </div>
 
@@ -284,5 +282,10 @@
       crossorigin="anonymous"
     ></script>
     <script src="./tilt.js"></script>
+    <script
+  type="text/javascript"
+  src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<!-- <script src="./email.js"></script> -->
   </body>
 </html>
